@@ -190,7 +190,7 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServices  #本人
 * 新建一个文本文档，保存时把后缀名改为`.bat`
 * 也可以使用命令：
 
-```raw
+```txt
 copy con 123.net
 net user yourname 123123 /add
 net localgroup administretors yourname /add

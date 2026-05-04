@@ -211,7 +211,7 @@ declare module 'vue-router/auto-routes' {
    * @internal
    */
   export interface _RouteFileInfoMap {
-    'node_modules/.pnpm/valaxy-theme-lolimeow@1.0.5_vue@3.5.33_typescript@6.0.3_/node_modules/valaxy-theme-lolimeow/pages/index.vue': {
+    'node_modules/.pnpm/valaxy-theme-lolimeow@1.0.6_vue@3.5.33_typescript@6.0.3_/node_modules/valaxy-theme-lolimeow/pages/index.vue': {
       routes:
         | '/'
       views:
@@ -253,7 +253,7 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
-    'node_modules/.pnpm/valaxy-theme-lolimeow@1.0.5_vue@3.5.33_typescript@6.0.3_/node_modules/valaxy-theme-lolimeow/pages/page/[page].vue': {
+    'node_modules/.pnpm/valaxy-theme-lolimeow@1.0.6_vue@3.5.33_typescript@6.0.3_/node_modules/valaxy-theme-lolimeow/pages/page/[page].vue': {
       routes:
         | '/page/[page]'
       views:
