@@ -44,8 +44,8 @@ declare module 'vue-router/auto-routes' {
       { path: ParamValue<false> },
       | never
     >,
-    '/404': RouteRecordInfo<
-      '/404',
+    '/404/': RouteRecordInfo<
+      '/404/',
       '/404',
       Record<never, never>,
       Record<never, never>,
@@ -223,9 +223,9 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
-    'pages/404.md': {
+    'pages/404/index.md': {
       routes:
-        | '/404'
+        | '/404/'
       views:
         | never
     }
