@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "npm run build:ssg",
+    "build": "pnpm run build:ssg",
     "build:spa": "valaxy build",
     "build:ssg": "valaxy build --ssg",
     "dev": "valaxy",
@@ -14,12 +14,12 @@
     "preview": "wrangler dev"
   },
   "dependencies": {
-    "valaxy": "0.28.6",
+    "valaxy": "0.28.7",
     "valaxy-addon-waline": "^0.2.1",
-    "valaxy-theme-lolimeow": "latest"
+    "valaxy-theme-lolimeow": "1.0.7"
   },
   "devDependencies": {
     "typescript": "^6.0.3",
-    "wrangler": "^4.87.0"
+    "wrangler": "^4.90.0"
   }
 }
