@@ -211,13 +211,13 @@ declare module 'vue-router/auto-routes' {
    * @internal
    */
   export interface _RouteFileInfoMap {
-    'node_modules/.pnpm/valaxy-theme-lolimeow@1.1.0_vue@3.5.34_typescript@6.0.3_/node_modules/valaxy-theme-lolimeow/pages/index.vue': {
+    'node_modules/.pnpm/valaxy-theme-lolimeow@1.1.1_vue@3.5.35_typescript@6.0.3_/node_modules/valaxy-theme-lolimeow/pages/index.vue': {
       routes:
         | '/'
       views:
         | never
     }
-    'node_modules/.pnpm/valaxy@0.28.9_@babel+parser_e5d94e2a455e4e1d7a80f91756e0e70f/node_modules/valaxy/client/pages/[...path].vue': {
+    'node_modules/.pnpm/valaxy@0.28.10_@babel+parse_f2e19de51fc682a76692857ac476476c/node_modules/valaxy/client/pages/[...path].vue': {
       routes:
         | '/[...path]'
       views:
@@ -253,7 +253,7 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
-    'node_modules/.pnpm/valaxy-theme-lolimeow@1.1.0_vue@3.5.34_typescript@6.0.3_/node_modules/valaxy-theme-lolimeow/pages/page/[page].vue': {
+    'node_modules/.pnpm/valaxy-theme-lolimeow@1.1.1_vue@3.5.35_typescript@6.0.3_/node_modules/valaxy-theme-lolimeow/pages/page/[page].vue': {
       routes:
         | '/page/[page]'
       views:

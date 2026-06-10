@@ -53,7 +53,6 @@ export default defineValaxyConfig({
       { text: '关于', link: '/about/', icon: 'i-ri-user-line' },
     ],
     navbarOptions: {
-      title: 'My Blog',
       tools: ['toggleDark', 'search'],
       hamburgerStyle: 'classic',
     },
