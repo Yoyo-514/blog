@@ -14,12 +14,12 @@
     "preview": "wrangler dev"
   },
   "dependencies": {
-    "valaxy": "0.28.10",
+    "valaxy": "0.28.11",
     "valaxy-addon-waline": "^0.2.1",
     "valaxy-theme-lolimeow": "latest"
   },
   "devDependencies": {
     "typescript": "^6.0.3",
-    "wrangler": "^4.99.0"
+    "wrangler": "^4.100.0"
   }
 }
