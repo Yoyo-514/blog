@@ -1,5 +1,8 @@
 // import type { UserThemeConfig } from 'valaxy-theme-lolimeow'
 import { defineValaxyConfig } from 'valaxy'
+// @ts-expect-error - `valaxy-addon-waline` 仅提供源码与导出映射，CI 下 `vue-tsc` 可能无法正确解析包根类型
+import { addonWaline } from 'valaxy-addon-waline'
+import { addonMermaid } from 'valaxy-addon-mermaid'
 
 // add icons what you will need
 const safelist = [
@@ -92,6 +95,17 @@ export default defineValaxyConfig({
       minCardWidth: '18rem',
     },
   },
+
+  addons: [
+    addonWaline({
+      serverURL: 'https://waline.yoyo514.top',
+      pageview: true,
+      comment: true,
+      login: 'force',
+      requiredMeta: ['nick', 'mail'],
+    }),
+    addonMermaid()
+  ],
 
   unocss: { safelist },
 })
