@@ -20,8 +20,9 @@ import type {
 
 declare module 'vue-router' {
   interface TypesConfig {
-    ParamParsers:
-      | never
+    _ParamParsers: {}
+    RouteNamedMap: import('vue-router/auto-routes').RouteNamedMap
+    _RouteFileInfoMap: import('vue-router/auto-routes')._RouteFileInfoMap
   }
 }
 
@@ -211,22 +212,28 @@ declare module 'vue-router/auto-routes' {
    * @internal
    */
   export interface _RouteFileInfoMap {
-    'node_modules/.pnpm/valaxy-theme-lolimeow@1.1.8_a7af88ebcdc6de56ba3dbddf93910b5f/node_modules/valaxy-theme-lolimeow/pages/index.vue': {
+    'node_modules/.pnpm/valaxy-theme-lolimeow@1.2.1_a33ab65b92301083c028ca2b15670781/node_modules/valaxy-theme-lolimeow/pages/index.vue': {
       routes:
         | '/'
       views:
         | never
+      pathParamNames:
+        | never
     }
-    'node_modules/.pnpm/valaxy@1.0.0-rc.9_@babel+pa_9b8943c2e9f875ba87d5b592289ec71e/node_modules/valaxy/client/pages/[...path].vue': {
+    'node_modules/.pnpm/valaxy@1.1.0_@devframes+age_6a8f62bf3a422b0122691bc784097a98/node_modules/valaxy/client/pages/[...path].vue': {
       routes:
         | '/[...path]'
       views:
         | never
+      pathParamNames:
+        | 'path'
     }
     'pages/404/index.md': {
       routes:
         | '/404/'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/about/index.md': {
@@ -234,11 +241,15 @@ declare module 'vue-router/auto-routes' {
         | '/about/'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/archives/index.md': {
       routes:
         | '/archives/'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/categories/index.md': {
@@ -246,23 +257,31 @@ declare module 'vue-router/auto-routes' {
         | '/categories/'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/links/index.md': {
       routes:
         | '/links/'
       views:
         | never
+      pathParamNames:
+        | never
     }
-    'node_modules/.pnpm/valaxy-theme-lolimeow@1.1.8_a7af88ebcdc6de56ba3dbddf93910b5f/node_modules/valaxy-theme-lolimeow/pages/page/[page].vue': {
+    'node_modules/.pnpm/valaxy-theme-lolimeow@1.2.1_a33ab65b92301083c028ca2b15670781/node_modules/valaxy-theme-lolimeow/pages/page/[page].vue': {
       routes:
         | '/page/[page]'
       views:
         | never
+      pathParamNames:
+        | 'page'
     }
     'pages/posts/linux-basic.md': {
       routes:
         | '/posts/linux-basic'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/posts/MIT Missing Semester/data-organization.md': {
@@ -270,11 +289,15 @@ declare module 'vue-router/auto-routes' {
         | '/posts/MIT Missing Semester/data-organization'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/posts/MIT Missing Semester/debug-and-profile.md': {
       routes:
         | '/posts/MIT Missing Semester/debug-and-profile'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/posts/MIT Missing Semester/overview-and-shell.md': {
@@ -282,11 +305,15 @@ declare module 'vue-router/auto-routes' {
         | '/posts/MIT Missing Semester/overview-and-shell'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/posts/MIT Missing Semester/shell-env.md': {
       routes:
         | '/posts/MIT Missing Semester/shell-env'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/posts/MIT Missing Semester/shell-tools-and-scripts.md': {
@@ -294,11 +321,15 @@ declare module 'vue-router/auto-routes' {
         | '/posts/MIT Missing Semester/shell-tools-and-scripts'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/posts/MIT Missing Semester/version-control.md': {
       routes:
         | '/posts/MIT Missing Semester/version-control'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/posts/MIT Missing Semester/vim.md': {
@@ -306,11 +337,15 @@ declare module 'vue-router/auto-routes' {
         | '/posts/MIT Missing Semester/vim'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/posts/painting-practice.md': {
       routes:
         | '/posts/painting-practice'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/posts/Poem-of-the-Unfettered-Void.md': {
@@ -318,11 +353,15 @@ declare module 'vue-router/auto-routes' {
         | '/posts/Poem-of-the-Unfettered-Void'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/posts/The-Reverie-Forsaken-Land.md': {
       routes:
         | '/posts/The-Reverie-Forsaken-Land'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/posts/tittle-tattle/as-for-sex.md': {
@@ -330,11 +369,15 @@ declare module 'vue-router/auto-routes' {
         | '/posts/tittle-tattle/as-for-sex'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/posts/tittle-tattle/college.md': {
       routes:
         | '/posts/tittle-tattle/college'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/posts/tittle-tattle/life-education.md': {
@@ -342,17 +385,23 @@ declare module 'vue-router/auto-routes' {
         | '/posts/tittle-tattle/life-education'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/posts/windows-basic.md': {
       routes:
         | '/posts/windows-basic'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/tags/index.md': {
       routes:
         | '/tags/'
       views:
+        | never
+      pathParamNames:
         | never
     }
   }
