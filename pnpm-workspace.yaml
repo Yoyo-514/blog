@@ -1,9 +1,6 @@
 packages:
   - .
 
-overrides:
-  'valaxy@1.1.0>unocss': 66.11.0
-
 allowBuilds:
   '@parcel/watcher': true
   esbuild: true
